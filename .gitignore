@@ -1,0 +1,147 @@
+# ROS2 Build Artifacts
+build/
+install/
+log/
+
+# Colcon artifacts
+.colcon_install_layout
+COLCON_IGNORE
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+pip-selfcheck.json
+
+# Python virtual environments
+.env
+.virtualenv
+.conda
+
+# IDE and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-*
+.atom/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ROS logs and temporary files
+.ros/
+*.log
+*.bag
+*.db3
+rosgraph.svg
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Build system artifacts
+*.cmake
+*.make
+CMakeLists.txt.user*
+CTestConfiguration.ini
+CTestTestfile.cmake
+install_manifest.txt
+
+# C/C++ artifacts
+*.o
+*.a
+*.so
+*.so.*
+*.dylib
+*.exe
+*.out
+*.app
+
+# Documentation build artifacts
+doc/_build/
+docs/_build/
+.sphinx/
+
+# Testing artifacts
+.coverage
+.pytest_cache/
+.tox/
+htmlcov/
+
+# ROS2 specific
+ros2_ws.code-workspace
+*.rviz
+*.perspective
+
+# Hardware specific (Raspberry Pi)
+*.img
+*.iso
+
+# Backup files
+*.bak
+*.backup
+*.tmp
+*.temp
+
+# ROS package generated files
+msg_gen/
+srv_gen/
+action_gen/
+
+# ROS2 Interface files (generated)
+*/build/
+*/install/
+
+# Development tools
+.mypy_cache/
+.pytest_cache/
+.coverage
+*.egg-info/
+dist/
+
+# Environment files
+.env.local
+.env.development
+.env.test
+.env.production
+
+# SSH keys (safety)
+*.pem
+*.key
+id_*
+
+# Secrets
+*.secret
+secrets.json
+config/secrets.yaml
+
+# Hardware calibration files that might contain specific offsets
+calibration_*.yaml
+servo_offsets.yaml
+
+# Temporary launch files
+*_temp.launch.py
+*_test.launch.py
