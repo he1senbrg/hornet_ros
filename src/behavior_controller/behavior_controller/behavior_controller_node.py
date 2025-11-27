@@ -129,7 +129,7 @@ class BehaviorControllerNode(Node):
         """Initialize face recognition."""
         if HAS_FACE_REC:
             try:
-                with open("/home/hornet/Desktop/ros_exam/hornet_ros/encodings.pickle", "rb") as f:
+                with open("../../encodings.pickle", "rb") as f:
                     data = pickle.loads(f.read())
                 self.known_face_encodings = data["encodings"]
                 self.known_face_names = data["names"]
