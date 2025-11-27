@@ -13,7 +13,7 @@ try:
     HAS_HARDWARE = True
 except ImportError:
     HAS_HARDWARE = False
-    print("[WARNING] Adafruit_PCA9685 not available. Running in simulation mode.")
+    print("[WARNING] Adafruit_PCA9685 not available.")
 
 class ServoControllerNode(Node):
     def __init__(self):
@@ -40,7 +40,7 @@ class ServoControllerNode(Node):
             [9, 10, 11], # Leg 3
         ]
         
-        # Current servo angles (for simulation)
+        # Current servo angles
         self.servo_angles = [[90, 90, 90] for _ in range(4)]
         
         # Subscribers
@@ -78,8 +78,7 @@ class ServoControllerNode(Node):
             for servo in range(3):
                 idx = leg * 3 + servo
                 angle = msg.data[idx]
-                
-                # Update simulation state
+
                 self.servo_angles[leg][servo] = angle
                 
                 # Send to hardware
