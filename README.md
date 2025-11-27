@@ -80,7 +80,10 @@ The robot automatically greets known faces (Souri, Vishnu, Arjun) with:
 - USB webcam for face recognition
 - Xbox controller (optional)
 
-## Notes
-- The system gracefully handles missing hardware dependencies
-- Face recognition requires the `encodings.pickle` file from the original hornet directory
-- All movement logic is preserved from the original implementation
+## RQT Graphs
+
+- Nodes Only
+    ![Nodes Only](images/nodes_only.png)
+
+- Nodes/Topics
+    ![Nodes/Topics](images/nodes_topics.png)
