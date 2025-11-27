@@ -164,7 +164,7 @@ class BehaviorControllerNode(Node):
         self.leg_position_pub.publish(msg)
     
     def wait_all_reach(self):
-        """Simple wait - in real implementation would check feedback."""
+        """Simple wait"""
         time.sleep(0.5)
     
     def leg_feedback_callback(self, msg):
@@ -466,7 +466,6 @@ class BehaviorControllerNode(Node):
                 # Alternative sequence for different starting position
                 self.set_site(0, self.X_DEFAULT + self.X_OFFSET, self.Y_START, self.Z_UP)
                 self.wait_all_reach()
-                # ... (similar pattern)
     
     def turn_right(self, step):
         """Turn robot right."""
